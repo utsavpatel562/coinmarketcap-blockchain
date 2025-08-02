@@ -1,6 +1,7 @@
 // app/page.tsx or app/page.jsx
 import React from "react";
 import Head from "next/head";
+import Header from "@/components/Header";
 
 function Page() {
   return (
@@ -8,10 +9,13 @@ function Page() {
       <Head>
         <link rel="icon" type="image/x-icon" href="/logo.jpeg" />
       </Head>
-      <div className="bg-slate-200 h-screen p-10">
-        <div className="text-2xl text-slate-200 bg-slate-900 p-3 rounded-3xl h-full place-content-center text-center">
-          CoinMarketCap - Blockchain (Web 3.0)
-        </div>
+      <div className="bg-white h-screen">
+        {/* Header */}
+        <Header />
+        <div className="mt-10" />
+        {/* Trending Coins */}
+        <div className="mt-20" />
+        {/* Full Table with coins*/}
       </div>
     </>
   );
